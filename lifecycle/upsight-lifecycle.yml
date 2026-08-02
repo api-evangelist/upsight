@@ -1,0 +1,41 @@
+generated: '2026-07-21'
+method: derived
+source: DNS probes (dig @8.8.8.8), http://archive.org/wayback/available, https://api.github.com/orgs/upsight, https://trunk.cocoapods.org/api/v1/pods/UpsightKit
+name: Upsight Platform Lifecycle
+description: Lifecycle posture for the Upsight mobile analytics and marketing
+  platform. All observations below are from live probes on 2026-07-21 and public
+  archives — the platform shows every signal of being shut down. No published
+  sunset, versioning, or deprecation policy could be located because the docs
+  host itself is offline.
+status: defunct
+evidence:
+- signal: website-offline
+  detail: upsight.com and www.upsight.com return no A records; nameservers are
+    parked at registrar defaults (dns1/dns2.registrar-servers.com). Subdomains
+    help.upsight.com, api.upsight.com, dev.upsight.com, docs.upsight.com and
+    analytics.upsight.com also have no A records.
+  probed: '2026-07-21'
+- signal: last-archived-snapshot
+  detail: The Internet Archive's most recent HTTP 200 capture of
+    www.upsight.com is 2022-11-13 (web.archive.org/web/20221113190450).
+  probed: '2026-07-21'
+- signal: docs-archived-only
+  detail: The developer documentation (help.upsight.com, "API & SDK Reference"
+    covering iOS, Android, tvOS, Unity and Web SDKs plus Dashboard/DataMine
+    guides) survives only in the Wayback Machine, e.g.
+    web.archive.org/web/20180314231023/http://help.upsight.com/.
+  probed: '2026-07-21'
+- signal: github-dormant
+  detail: github.com/upsight (44 public repos) had its last first-party push on
+    2020-10-22 (upsight/doctor); org profile last updated 2020-01-22.
+  probed: '2026-07-21'
+- signal: sdk-distribution-frozen
+  detail: The UpsightKit CocoaPods pod's final release is 4.9.3, published
+    2018-11-27; no releases since.
+  probed: '2026-07-21'
+versioning:
+  scheme: semver (observed from UpsightKit SDK releases 4.0.5 -> 4.9.3)
+  policy_url: null
+deprecation_policy: null
+sla: null
+status_page: null

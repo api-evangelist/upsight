@@ -1,0 +1,75 @@
+generated: '2026-07-21'
+method: searched
+source: https://pypi.org/pypi/doctor/json, https://trunk.cocoapods.org/api/v1/pods/UpsightKit, https://api.github.com/orgs/upsight/repos
+name: Upsight Packages
+description: First-party packages and SDKs published by Upsight (mobile analytics and
+  marketing platform, now defunct). The upsight.com website and help.upsight.com docs
+  host no longer resolve; the GitHub org is dormant (last first-party push 2020) but
+  the published registry artifacts remain installable. npm, Maven Central (com.upsight),
+  NuGet, RubyGems, Packagist, crates.io and pkg.go.dev were searched with no
+  first-party results.
+packages:
+- name: UpsightKit
+  registry: cocoapods
+  url: https://cocoapods.org/pods/UpsightKit
+  language: objective-c
+  platforms:
+  - ios
+  - tvos
+  version: 4.9.3
+  official: true
+  status: unmaintained
+  first_published: '2016-01-19'
+  last_published: '2018-11-27'
+  notes: Upsight SDK for iOS and tvOS, published to CocoaPods trunk by owner
+    "Upsight, Inc." — 17 releases from v4.0.5 (2016-01-19) to v4.9.3 (2018-11-27).
+    Source and integration docs mirrored at https://github.com/upsight/UpsightKit.
+- name: doctor
+  registry: pypi
+  url: https://pypi.org/project/doctor/
+  version: 3.13.7
+  language: python
+  official: true
+  status: unmaintained
+  notes: Uses Python 3 type hints to validate request and response data in Flask
+    APIs and generate API documentation. Author listed on PyPI as Upsight;
+    homepage https://github.com/upsight/doctor (last pushed 2020-10-22).
+- name: upsight/android-javadoc
+  registry: github
+  url: https://github.com/upsight/android-javadoc
+  language: java
+  platforms:
+  - android
+  official: true
+  status: unmaintained
+  notes: Javadoc for the Upsight Android SDK. The SDK binaries themselves were
+    distributed from Upsight-hosted infrastructure that is no longer online;
+    com.upsight artifacts are not on Maven Central (0 results).
+- name: upsight/ron
+  registry: github
+  url: https://github.com/upsight/ron
+  language: go
+  official: true
+  status: unmaintained
+  notes: Command line interface to common build tasks (internal Go tooling,
+    not a platform client).
+- name: upsight/dinghy
+  registry: github
+  url: https://github.com/upsight/dinghy
+  language: go
+  official: true
+  status: unmaintained
+  notes: Raft leader-election library (internal Go tooling, not a platform client).
+searched:
+- registry: npm
+  query: upsight
+  result: not-found
+- registry: maven-central
+  query: g:com.upsight*
+  result: 0 results
+- registry: pypi
+  query: doctor (from github.com/upsight/doctor)
+  result: found, author Upsight
+- registry: cocoapods
+  query: UpsightKit
+  result: found

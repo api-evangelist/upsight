@@ -1,22 +1,75 @@
 aid: upsight
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/upsight.png
 name: Upsight
-description: Upsight is a company surfaced as a portfolio company of battery-ventures and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Upsight was a mobile analytics and marketing platform for apps and
+  games — positioning itself as a "user lifecycle management platform" combining
+  omnichannel analytics, integrated web and mobile marketing, ad optimization, and
+  a DataMine SQL analytics product behind a single SDK for iOS, Android, tvOS,
+  Unity, and Web. A Battery Ventures portfolio company, the platform is now
+  defunct - upsight.com no longer resolves, the help.upsight.com developer docs
+  survive only in the Internet Archive, and the GitHub org has been dormant since
+  2020, though the UpsightKit CocoaPods SDK and the doctor PyPI package remain
+  published.
 url: https://raw.githubusercontent.com/api-evangelist/upsight/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - battery-ventures
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: portfolio-lead-defunct-company
+x-status: defunct
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Analytics
+- Mobile
+- Marketing
+- Advertising
+- Gaming
+- Defunct
 apis: []
+common:
+- name: Upsight GitHub Organization
+  type: GitHubOrganization
+  url: https://github.com/upsight
+- name: Upsight Packages
+  type: Packages
+  url: packages/upsight-packages.yml
+- name: Upsight SDKs
+  type: SDKs
+  url: packages/upsight-packages.yml
+- name: Upsight LLMs.txt
+  type: LLMsTxt
+  url: llms/upsight-llms.txt
+- name: Upsight Platform Lifecycle
+  type: Lifecycle
+  url: lifecycle/upsight-lifecycle.yml
+- name: Upsight Documentation (archived)
+  type: Documentation
+  url: http://web.archive.org/web/20180314231023/http://help.upsight.com/
+- name: Upsight API & SDK Reference (archived)
+  type: APIReference
+  url: http://web.archive.org/web/20180314231023/http://help.upsight.com/api_sdk_reference/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 3
+  pass: local-v1
